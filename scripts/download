@@ -4,4 +4,4 @@ set -e
 cd $(dirname $0)
 source ./build-common
 
-download d3570d9da029a52d282f0b185cdaf14e5c0e8f6f https://github.com/rancher/os-base/releases/download/v2015.05-1/os-base.tar.xz
+download bc58a3df4b5e783601f4aa0c83a7ed2476f336b0 https://github.com/rancher/os-base/releases/download/v2015.05-2/os-base.tar.xz
