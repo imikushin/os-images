@@ -10,6 +10,7 @@ COPY build/update-ssh-keys /usr/bin/
 COPY build/rancheros-install /usr/sbin/
 RUN echo 'RancherOS \\n \l' > /etc/issue
 RUN locale-gen en_US.UTF-8
+ENV LANG en_US.UTF-8
 RUN addgroup --gid 1100 rancher && \
     addgroup --gid 1101 docker && \
     useradd -u 1100 -g rancher -G docker,sudo -m -s /bin/bash rancher && \
